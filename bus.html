@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jenis Bus - Putra Barokah Trans</title>
+
+  <!-- CSS Swiper & Custom -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="bus.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="/FP_Pemweb/Assets/logo_hitam.jpg" alt="Putra Barokah Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="bus.html">Bus</a></li>
+          <li><a href="about.html#">About</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>JENIS BUS YANG TERSEDIA DI <br> PUTRA BAROKAH TRANS</h1>
+    </div>
+  </section>
+
+  <!-- Swiper Slider Section -->
+  <div class="swiper-container-container">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="/FP_Pemweb/Assets/besar_bus.jpg" alt="Bus Besar">
+            <h3>Bus Besar</h3>
+            <ul>
+              <li>60 seat / 47 seat / 50 seat (2-2 konfigurasi)</li>
+              <li>Full AC</li>
+              <li>TV, Karaoke, Bantal</li>
+              <li>USB Charger</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="/FP_Pemweb/Assets/mini_bus.jpg" alt="Bus Mini">
+            <h3>Bus Mini</h3>
+            <ul>
+              <li>31 seat/ 35 seat/ 41 seat (2-2 konfigurasi)</li>
+              <li>Full AC</li>
+              <li>TV, Karaoke</li>
+              <li>USB Charger</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="/FP_Pemweb/Assets/elf_bus.jpg" alt="Bus Elf">
+            <h3>Bus Elf</h3>
+            <ul>
+              <li>17 seat</li>
+              <li>Full AC</li>
+              <li>TV, Karaoke</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="/FP_Pemweb/Assets/hiace_bus.jpg" alt="Bus Hiace">
+            <h3>Bus Hiace</h3>
+            <ul>
+              <li>15 seat</li>
+              <li>AC, Karaoke</li>
+              <li>Interior nyaman</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bottom">
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="/FP_Pemweb/Assets/logo_putih.jpg" alt="Logo Barokah Trans">
+      </div>
+  
+      <!-- Kontak -->
+      <div class="footer-contact">
+        <h4>Hubungi Kami</h4>
+        <p><strong>Phone:</strong></p>
+        <p><a href="tel:08123048935">08123048935</a>, 
+           <a href="tel:087854304555">087854304555</a>, 
+           <a href="tel:081237416482">081237416482</a>, 
+           <a href="tel:08761169669">08761169669</a></p>
+           <p style="color: #ffffff;">ayam</p>
+  
+        <p><strong>Reservasi:</strong></p>
+        <p>
+          <a href="tel:08123048935">08123048935</a>, 
+          <a href="tel:087854304555">087854304555</a><br>
+          <span>(WhatsApp, Call & SMS)</span>
+        </p>
+        <p style="color: #ffffff;">ayam</p>
+  
+        <p><strong>Customer Service:</strong></p>
+        <p><a href="https://wa.me/628761169669">08761169669</a> <span>(WhatsApp only)</span></p>
+      </div>
+  
+      <!-- Alamat -->
+      <div class="footer-address">
+        <h4>Alamat</h4>
+        <p>Jl. Joyoboyo 34 Aloha – Sawotratap – Sidoarjo, 61254</p>
+      </div>
+  
+      <!-- Jam Operasional -->
+      <div class="footer-hours">
+        <h4>Jam Operasional</h4>
+        <p>Senin - Sabtu: 07.00 – 17.00<br>
+           Minggu & Hari Libur Nasional: Tutup</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Navigasi aktif
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        links.forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Inisialisasi Swiper
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  </script>
+
+</body>
+</html>
 
