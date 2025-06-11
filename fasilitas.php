@@ -47,8 +47,17 @@ function getFasilitas($conn, $id, $kategori) {
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="bus.html">Bus</a></li>
+          <li class="dropdown">
+            <a href="#">Fasilitas</a>
+            <ul class="dropdown-menu">
+              <li><a href="fasilitas.php?id=1">Bus Besar</a></li>
+              <li><a href="fasilitas.php?id=2">Bus Mini</a></li>
+              <li><a href="fasilitas.php?id=3">Bus Elf</a></li>
+              <li><a href="fasilitas.php?id=4">Bus HiAce</a></li>
+            </ul>
+          </li>
           <li><a href="about.html">About</a></li>
-          <li class="active"><a href="order.html">Order</a></li>
+          <li><a href="order.html">Order</a></li>
           <li><a href="galeri.html">Galeri</a></li>
         </ul>
       </nav>
@@ -88,8 +97,7 @@ function getFasilitas($conn, $id, $kategori) {
       </div>
 
       <div class="armada-buttons">
-        <a href="https://wa.me/6281234567890?text=Halo%20Barokah%20Trans%2C%20saya%20ingin%20sewa%20<?= urlencode($data['nama']); ?>" class="btn"><i class="fab fa-whatsapp"></i> Sewa Bus Pariwisata</a>
-        <a href="order.php?id=<?= $data['id']; ?>" class="btn-secondary"><i class="fas fa-ticket-alt"></i> Pesan Tiket AKAP</a>
+        <a href="order.html" class="btn"><i class="fab fa-whatsapp"></i> Sewa Bus Pariwisata</a>
       </div>
     </div>
   </section>
