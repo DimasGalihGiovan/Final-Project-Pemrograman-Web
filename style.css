@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 40px;
+}
+
+.navbar .logo img {
+  height: 100px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar nav ul li.active a,
+.navbar nav ul li a:hover {
+  color: #ff0000;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)),
+    url('/FP_Pemweb/Assets/bus1_home.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background: #ff0000;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background: #cc0000;
+}
+
+/* Content Section */
+.content {
+  background: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.content h2 {
+  color: #aa0000;
+  font-size: 2rem;
+}
+
+.subheading {
+  margin: 10px 0 30px;
+  font-style: italic;
+}
+
+.about-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about-section img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+/* ===== Services Section ===== */
+.services {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services h3 span {
+  color: #c41d1d;
+}
+
+.service-items {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: white;
+  width: 280px;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.service-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.service-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+.service-card h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.service-link {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: #f15a29;
+}
+
+.bg-fasilitas {
+  background-image: url('/FP_Pemweb/Assets/jenisfasilitas_home.jpg');
+}
+
+.bg-bus {
+  background-image: url('/FP_Pemweb/Assets/jenisbus_home.jpg');
+}
+
+.service-tagline {
+  color: #c41d1d;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background: #eee;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-bottom {
+  background: white;
+  padding: 30px 40px;
+  color: #000;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  height: 200px; 
+}
+
+.footer-contact,
+.footer-address,
+.footer-hours {
+  max-width: 250px;
+}
+
+.footer-contact h4,
+.footer-address h4,
+.footer-hours h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.footer-contact a {
+  color: #f15a29;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact span {
+  font-size: 13px;
+  color: #666;
+}
