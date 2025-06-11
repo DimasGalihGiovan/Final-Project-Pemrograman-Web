@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2025 at 11:14 PM
+-- Generation Time: Jun 11, 2025 at 11:39 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,7 +42,7 @@ CREATE TABLE `armada` (
 
 INSERT INTO `armada` (`id`, `nama`, `jenis`, `kursi`, `deskripsi`, `gambar`) VALUES
 (1, 'Mercedes Benz OF 917 L', 'Bus Besar', 60, 'Bus besar cocok untuk perjalanan rombongan besar seperti wisata, ziarah, atau kunjungan perusahaan.', 'armada10.jpg'),
-(2, 'Hino GB 150 L', 'Bus Besar', 41, 'Mini bus adalah pilihan ideal untuk kelompok menengah seperti keluarga besar, rombongan sekolah, atau outing kantor. Ukurannya lebih ringkas dari bus besar namun tetap nyaman dan dilengkapi fasilitas standar seperti AC, audio-video, dan reclining seat.\r\n', 'mini_bus.jpg'),
+(2, 'Hino GB 150 L', 'Bus Mini', 41, 'Mini bus adalah pilihan ideal untuk kelompok menengah seperti keluarga besar, rombongan sekolah, atau outing kantor. Ukurannya lebih ringkas dari bus besar namun tetap nyaman dan dilengkapi fasilitas standar seperti AC, audio-video, dan reclining seat.\r\n', 'mini_bus.jpg'),
 (3, 'Jetbus MC 2', 'Bus Elf', 17, 'Bus elf banyak digunakan untuk city tour, antar-jemput bandara, atau perjalanan antar kota. Dengan bodi yang ramping dan manuver lincah, cocok untuk perjalanan ke daerah sempit. Tetap dilengkapi AC, audio, dan bagasi secukupnya.\r\n', 'elf_bus.jpg'),
 (4, 'Toyota Hiace', 'Bus Hiace', 15, 'Hiace merupakan minibus premium yang nyaman untuk perjalanan keluarga, tamu VIP, atau rombongan kecil. Interior elegan, kursi empuk, AC double blower, dan USB charger menjadikan Hiace pilihan populer untuk kenyamanan maksimal.', 'hiace_bus.jpg');
 
