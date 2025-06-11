@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Barokah Trans</title>
+  <link rel="stylesheet" href="galeri.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="/FP_Pemweb/Assets/logo_hitam.jpg" alt="Putra Barokah Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bus.html">Bus</a></li>
+          <li><a href="about.html#">About</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li class="active"><a href="galeri.html">Galeri</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>JENIS BUS YANG TERSEDIA DI <br> PUTRA BAROKAH TRANS</h1>
+    </div>
+  </section>
+
+
+  <main>
+    <section class="main-gallery">
+      <div class="featured-img">
+        <img src="Assets/armada1.jpg" alt="Bus 1">
+        <p class="caption">Bus 1</p>
+      </div>
+
+      <div class="thumbnail-slider">
+        <div class="thumbnails" id="slider">
+          <!-- 20 gambar bus -->
+          <img src="Assets/armada1.jpg" alt="Bus 1">
+          <img src="Assets/armada2.jpg" alt="Bus 2">
+          <img src="Assets/armada3.jpg" alt="Bus 3">
+          <img src="Assets/armada4.jpg" alt="Bus 4">
+          <img src="Assets/armada5.jpg" alt="Bus 5">
+          <img src="Assets/armada6.jpg" alt="Bus 6">
+          <img src="Assets/armada7.jpg" alt="Bus 7">
+          <img src="Assets/armada8.jpg" alt="Bus 8">
+          <img src="Assets/armada9.jpg" alt="Bus 9">
+          <img src="Assets/armada10.jpg" alt="Bus 10">
+          <img src="Assets/armada11.jpg" alt="Bus 11">
+          <img src="Assets/armada12.jpg" alt="Bus 12">
+          <img src="Assets/armada13.jpg" alt="Bus 13">
+          <img src="Assets/armada14.jpg" alt="Bus 14">
+          <img src="Assets/armada15.jpg" alt="Bus 15">
+          <img src="Assets/armada16.jpg" alt="Bus 16">
+          <img src="Assets/armada17.jpg" alt="Bus 17">
+          <img src="Assets/armada18.jpg" alt="Bus 18">
+          <img src="Assets/armada19.jpg" alt="Bus 19">
+          <img src="Assets/armada20.jpg" alt="Bus 20">
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p>Cari Penyedia Layanan Sewa Bus Surabaya Terbaik ?</p>
+      <a href="order.html" class="cta-button">Pesan Sekarang</a>
+    </section>
+  </main>
+
+  <footer class="footer-bottom">
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="/FP_Pemweb/Assets/logo_putih.jpg" alt="Logo Barokah Trans">
+      </div>
+  
+      <!-- Kontak -->
+      <div class="footer-contact">
+        <h4>Hubungi Kami</h4>
+        <p><strong>Phone:</strong></p>
+        <p><a href="tel:08123048935">08123048935</a>, 
+           <a href="tel:087854304555">087854304555</a>, 
+           <a href="tel:081237416482">081237416482</a>, 
+           <a href="tel:08761169669">08761169669</a></p>
+           <p style="color: #ffffff;">ayam</p>
+  
+        <p><strong>Reservasi:</strong></p>
+        <p>
+          <a href="tel:08123048935">08123048935</a>, 
+          <a href="tel:087854304555">087854304555</a><br>
+          <span>(WhatsApp, Call & SMS)</span>
+        </p>
+        <p style="color: #ffffff;">ayam</p>
+  
+        <p><strong>Customer Service:</strong></p>
+        <p><a href="https://wa.me/628761169669">08761169669</a> <span>(WhatsApp only)</span></p>
+      </div>
+  
+      <!-- Alamat -->
+      <div class="footer-address">
+        <h4>Alamat</h4>
+        <p>Jl. Joyoboyo 34 Aloha – Sawotratap – Sidoarjo, 61254</p>
+      </div>
+  
+      <!-- Jam Operasional -->
+      <div class="footer-hours">
+        <h4>Jam Operasional</h4>
+        <p>Senin - Sabtu: 07.00 – 17.00<br>
+           Minggu & Hari Libur Nasional: Tutup</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+    const featuredImg = document.querySelector('.featured-img img');
+    const caption = document.querySelector('.caption');
+
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        featuredImg.src = thumb.src;
+        caption.textContent = thumb.alt;
+      });
+    });
+  </script>
+
+</body>
+</html>
 
