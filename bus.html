@@ -15,13 +15,22 @@
   <header>
     <div class="navbar">
       <div class="logo">
-        <img src="/FP_Pemweb/Assets/logo_hitam.jpg" alt="Putra Barokah Logo">
+        <img src="Assets/logo_hitam.jpg" alt="Putra Barokah Logo">
       </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="bus.html">Bus</a></li>
-          <li><a href="about.html#">About</a></li>
+          <li class="dropdown">
+            <a href="#">Fasilitas</a>
+            <ul class="dropdown-menu">
+              <li><a href="fasilitas.php?id=1">Bus Besar</a></li>
+              <li><a href="fasilitas.php?id=2">Bus Mini</a></li>
+              <li><a href="fasilitas.php?id=3">Bus Elf</a></li>
+              <li><a href="fasilitas.php?id=4">Bus HiAce</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
           <li><a href="order.html">Order</a></li>
           <li><a href="galeri.html">Galeri</a></li>
         </ul>
@@ -46,13 +55,10 @@
         <!-- Slide 1 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="/FP_Pemweb/Assets/besar_bus.jpg" alt="Bus Besar">
+            <img src="Assets/besar_bus.jpg" alt="Bus Besar">
             <h3>Bus Besar</h3>
             <ul>
               <li>60 seat / 47 seat / 50 seat (2-2 konfigurasi)</li>
-              <li>Full AC</li>
-              <li>TV, Karaoke, Bantal</li>
-              <li>USB Charger</li>
             </ul>
           </div>
         </div>
@@ -60,13 +66,10 @@
         <!-- Slide 2 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="/FP_Pemweb/Assets/mini_bus.jpg" alt="Bus Mini">
+            <img src="Assets/mini_bus.jpg" alt="Bus Mini">
             <h3>Bus Mini</h3>
             <ul>
               <li>31 seat/ 35 seat/ 41 seat (2-2 konfigurasi)</li>
-              <li>Full AC</li>
-              <li>TV, Karaoke</li>
-              <li>USB Charger</li>
             </ul>
           </div>
         </div>
@@ -74,12 +77,10 @@
         <!-- Slide 3 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="/FP_Pemweb/Assets/elf_bus.jpg" alt="Bus Elf">
+            <img src="Assets/elf_bus.jpg" alt="Bus Elf">
             <h3>Bus Elf</h3>
             <ul>
               <li>17 seat</li>
-              <li>Full AC</li>
-              <li>TV, Karaoke</li>
             </ul>
           </div>
         </div>
@@ -87,12 +88,10 @@
         <!-- Slide 4 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="/FP_Pemweb/Assets/hiace_bus.jpg" alt="Bus Hiace">
+            <img src="Assets/hiace_bus.jpg" alt="Bus Hiace">
             <h3>Bus Hiace</h3>
             <ul>
               <li>15 seat</li>
-              <li>AC, Karaoke</li>
-              <li>Interior nyaman</li>
             </ul>
           </div>
         </div>
@@ -104,7 +103,7 @@
     <div class="footer-container">
       <!-- Logo -->
       <div class="footer-logo">
-        <img src="/FP_Pemweb/Assets/logo_putih.jpg" alt="Logo Barokah Trans">
+        <img src="Assets/logo_putih.jpg" alt="Logo Barokah Trans">
       </div>
   
       <!-- Kontak -->
@@ -170,4 +169,3 @@
 
 </body>
 </html>
-
