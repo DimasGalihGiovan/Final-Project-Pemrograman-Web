@@ -216,3 +216,42 @@ footer {
   }
 }
 
+/* Dropdown styles */
+nav ul li.dropdown {
+  position: relative;
+}
+
+nav ul li.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 180px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+
+nav ul li.dropdown .dropdown-menu li {
+  display: block;
+  width: 100%;
+}
+
+nav ul li.dropdown .dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+nav ul li.dropdown .dropdown-menu li a:hover {
+  background-color: #b12222;
+}
+
+/* Show dropdown on hover */
+nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
