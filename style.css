@@ -45,7 +45,7 @@ body {
 .hero {
   background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)),
     url('Assets/bus1_home.jpg') no-repeat center center/cover;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
