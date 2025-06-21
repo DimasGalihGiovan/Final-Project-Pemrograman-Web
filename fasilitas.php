@@ -70,7 +70,7 @@ function getFasilitas($conn, $id, $kategori) {
 
     <div class="armada-right">
       <h2><?= $data['nama']; ?></h2>
-      <h3><?= $data['kursi']; ?> Seats - <?= $data['jenis']; ?></h3>
+      <h3><?= $data['kursi']; ?> Seats </h3>
       <p><?= nl2br($data['deskripsi']); ?></p>
 
       <div class="armada-fasilitas">
